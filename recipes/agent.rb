@@ -10,7 +10,7 @@ zipname = "dripstat_agent-#{node['dripstat']['agent']['version']}.zip"
 dripstat_zip = "#{node['dripstat']['home']}/#{zipname}"
 
 remote_file dripstat_zip do
-  source "http://dripstat.com/dl/#{zipname}"
+  source "#{node['dripstat']['agent']['url']}#{zipname}"
   owner node['dripstat']['owner']
   group node['dripstat']['owner']
 end

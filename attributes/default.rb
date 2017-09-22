@@ -1,7 +1,8 @@
 # Install Attributes
 
 default['dripstat']['home'] = '/tmp/dripstat'
-default['dripstat']['agent']['version'] = '7.2.5'
+default['dripstat']['agent']['url'] = 'https://dl.dripstat.com/agent/java/'
+default['dripstat']['agent']['version'] = 'latest'
 default['dripstat']['owner'] = 'root'
 
 # Mandatory Configuration
